@@ -22,6 +22,7 @@ var body = document.getElementById("body");
 
 if (hr >= 6 && hr < 12) {
     body.classList.add("dia");
+    body.style.background = "linear-gradient(120deg, #ffe4c4, #ffd700)";
     exibirMensagem("Bom Dia");
     var relogioDivs = document.querySelectorAll('.relogio div');
     relogioDivs.forEach(function(elemento) {
@@ -33,6 +34,7 @@ if (hr >= 6 && hr < 12) {
 
 if (hr >= 12 && hr < 18) {
     body.classList.add("tarde");
+    body.style.background = "linear-gradient(120deg, #dbead5, #008000)";
     exibirMensagem("Boa Trade");
     var relogioDivs = document.querySelectorAll('.relogio div');
     relogioDivs.forEach(function(elemento) {
@@ -55,20 +57,6 @@ if ((hr >= 18 && hr < 24) || (hr >= 0 && hr < 6)) {
 
 } 
 })
-
-// function exibirMensagem() {
-//     var mensagem = document.getElementById("mensagem");
-//     mensagem.style.display = "block";
-    
-
-    
-
-// }
-
-// function exibirMensagem1() {
-//     var mensagem1 = document.getElementById("mensagem1");
-//     mensagem1.style.display = "block";
-// }
 
 function exibirMensagem(saudacao) {
     var mensagem2 = document.getElementById("mensagem");
